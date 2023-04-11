@@ -1,5 +1,5 @@
-
-
+import './css/Homepage.css'
+import pfp from '../images/linkedin_pfp.jpg'
 
 function Homepage(){
     return (
@@ -12,8 +12,18 @@ function Homepage(){
 
 function Introduction(){
     return (
-        <h1>test</h1>
-
+        <>
+            <div class="introduction" id="About">
+                <h1>Who Am I?</h1>
+                <div class="introduction-inner">
+                    <img src={pfp}  width="150" height="150" alt="Linkedin pfp" class = "pfp" />
+                    <p>Hello and welcome to my personal portfolio website! 
+                        My name is Xing and I am a current student at Hunter College. 
+                        I am pursuing a degree in Computer Science. I'm interested in 
+                        learning more about web development, automation, and new technologies.</p>
+                </div>
+            </div>
+        </>
     )
 }
 
@@ -22,8 +32,12 @@ function Projects(){
         <>
         <div class="Projects" id="project-list">
             <h1>Projects</h1>
-            <p>click the project items!</p>
             <div class="project-items">
+            <button class="item" id="Eye Scream Vision">
+                    <h2>Eye Scream Vision</h2>
+                    <p>Utilized Material UI to create a responsive website along with react router for multiple pages. 
+                    </p>
+                </button>
                 <button class="item" id="Fortnite-Destination">
                     <h2>Fortnite Tourist Destination</h2>
                     <p>Utilized React and React Router to create a multi-page site introducing fortnite as a tourist destination. 

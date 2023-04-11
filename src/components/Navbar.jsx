@@ -19,7 +19,7 @@ function Navbar(){
         setAnchorElNav(null);
     };
     return (
-        <AppBar position="relative" sx={{backgroundColor: '#0B2447'}}>
+        <AppBar position="relative" sx={{backgroundColor: 'black'}}>
             <Toolbar sx={{py:1}}>
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                     <IconButton
