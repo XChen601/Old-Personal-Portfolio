@@ -1,0 +1,12 @@
+body {
+    min-height: 100vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 20px;
+    margin-top: 15px;
+    
+}

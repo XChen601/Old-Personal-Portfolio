@@ -1,11 +1,13 @@
 import './css/Homepage.css'
 import pfp from '../images/linkedin_pfp.jpg'
+import { Button } from '@mui/material';
 
 function Homepage(){
     return (
         <>
             <Introduction />
             <Projects />
+            <Contact />
         </>
     )
 }
@@ -22,6 +24,7 @@ function Introduction(){
                         I am pursuing a degree in Computer Science. I'm interested in 
                         learning more about web development, automation, and new technologies.</p>
                 </div>
+                <Button id='contact-button' variant='outlined' style={{borderColor: 'white'}}>Get In Touch</Button>
             </div>
         </>
     )
@@ -33,7 +36,7 @@ function Projects(){
         <div class="Projects" id="project-list">
             <h1>Projects</h1>
             <div class="project-items">
-            <button class="item" id="Eye Scream Vision">
+                <button class="item" id="Eye Scream Vision">
                     <h2>Eye Scream Vision</h2>
                     <p>Utilized Material UI to create a responsive website along with react router for multiple pages. 
                     </p>
@@ -80,15 +83,22 @@ function Projects(){
                     <h2>Coming Soon</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, illo tempora quae voluptas minima consectetur.</p>
                 </button>
-                <button class="item" id="ComingSoon">
-                    <h2>Coming Soon</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, illo tempora quae voluptas minima consectetur.</p>
-                </button> 
+
             </div>
         </div>
         </>
         
     )
+}
+
+function Contact(){
+    return (
+        <div className='contact-section'>
+        <h2>Contact Me!</h2>
+        <p>Email: xchen110@gmail.com</p>
+    </div>
+    )
+    
 }
 
 export default Homepage

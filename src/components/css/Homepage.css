@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+.Projects {
+    display: flex;
+    height: 100%;
+}
 #project-list {
     margin: 0% 15%;
     display: flex;
@@ -16,7 +20,6 @@ body {
     gap: 4px;
     padding: 4px;
     grid-template-columns: repeat(auto-fit, minmax(max(220px, 18vw), 1fr));
-    gap: 5%;
 }
 
 .item {
@@ -32,7 +35,9 @@ body {
     transition: transform .5s ease-in-out;
     padding: 25px;
     color: #eee;
-    height: max(250px, 20vh);
+    height: max(270px, 20vh);
+
+    margin: 5%;
 }
 
 .item p {
@@ -44,7 +49,16 @@ body {
     box-shadow: 0 0 5px rgb(212, 238, 247);
 }
 
+#contact-button {
+    color: white;
+    border-radius: 0%;
+    font-weight: 600;
+}
 
+#contact-button:hover {
+    background-color: white;
+    color: black;
+}
 /* intro */
 .introduction {
     display: flex;
@@ -66,3 +80,14 @@ body {
     border-radius: 50%;
     border: 3px solid rgb(86, 176, 194);
 }
+
+
+/* Contact Section */
+.contact-section {
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

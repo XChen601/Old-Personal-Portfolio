@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ["Home", "Projects", "Contact", "About"]
+const pages = ["Home", "Projects", "Contact"]
 
 function Navbar(){
     const navigate = useNavigate();
