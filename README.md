@@ -1,6 +1,6 @@
 # Personal Portfolio Website - Xing Chen
 
-[Website Link](https://www.example.com)
+[Website Link](https://xchen601.github.io/Personal-Portfolio/) or https://xchen601.github.io/Personal-Portfolio/
 
 This is a personal portfolio website designed to showcase my skills, projects, and achievements. The website is intended to serve as a hub for potential clients or employers to learn more about me and my work.
 
