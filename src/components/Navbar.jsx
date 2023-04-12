@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import HomeIcon from '@mui/icons-material/Home';
 import MenuIcon from '@mui/icons-material/Menu';
 
-const pages = ["Home", "Projects", "Contact"]
+const pages = ["Home", "Projects"]
 
 function Navbar(){
     const navigate = useNavigate();
@@ -78,6 +78,9 @@ function Navbar(){
                         </Button>
                     ))}
                 </Box>
+                <Button onClick={() => document.getElementById('contact').scrollIntoView()}
+                    sx={{ my: 2, color: 'rgb(86, 176, 194)', display: 'block', fontSize: 18, paddingRight: 3, paddingLeft: 3 }}>
+                    Contact</Button>
             </Toolbar>
         </AppBar>
     );

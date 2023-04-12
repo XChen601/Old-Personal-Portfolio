@@ -1,6 +1,8 @@
 import './css/Homepage.css'
 import pfp from '../images/linkedin_pfp.jpg'
 import { Button } from '@mui/material';
+import { Link, useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
 
 function Homepage(){
     return (
@@ -15,10 +17,10 @@ function Homepage(){
 function Introduction(){
     return (
         <>
-            <div class="introduction" id="About">
+            <div className="introduction" id="About">
                 <h1>Who Am I?</h1>
-                <div class="introduction-inner">
-                    <img src={pfp}  width="150" height="150" alt="Linkedin pfp" class = "pfp" />
+                <div className="introduction-inner">
+                    <img src={pfp}  width="150" height="150" alt="Linkedin pfp" className = "pfp" />
                     <p>Hello and welcome to my personal portfolio website! 
                         My name is Xing and I am a current student at Hunter College. 
                         I am pursuing a degree in Computer Science. I'm interested in 
@@ -31,39 +33,54 @@ function Introduction(){
 }
 
 function Projects(){
+    const navigate = useNavigate()
+
+    function handleClick(event) {
+        if (event.target.classList.contains("item")) {
+            console.log("Item clicked!");
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("click", handleClick);
+        return () => {
+            window.removeEventListener("click", handleClick);
+        };
+    }, []);
+
     return (
         <>
-        <div class="Projects" id="project-list">
+        <div className="Projects" id="project-list">
             <h1>Projects</h1>
-            <div class="project-items">
-                <button class="item" id="Eye Scream Vision">
+            <div className="project-items">
+                <button className="item" id="Eye Scream Vision">
                     <h2>Eye Scream Vision</h2>
                     <p>Utilized Material UI to create a responsive website along with react router for multiple pages. 
                     </p>
                 </button>
-                <button class="item" id="Fortnite-Destination">
+                <button className="item" id="Fortnite-Destination">
                     <h2>Fortnite Tourist Destination</h2>
                     <p>Utilized React and React Router to create a multi-page site introducing fortnite as a tourist destination. 
                     </p>
                 </button>
-                <button class="item" id="TickStock">
+                <button className="item" id="TickStock">
                     <h2>TickStock</h2>
                     <p>Built an Android application with Android Studio using Kotlin that displays stock prices, news relating to finance, and account setting tab
                         by working with Polygon API to retrieve stock data.
                     </p>
                 </button>
-                <button class="item" id="Etch-A-Sketch">
+                <button className="item" id="Etch-A-Sketch">
                     <h2>Etch-a-Sketch</h2>
                     <p>Website with Etch-A-Sketch created using HTML, CSS, and JS. Features include rainbow, clear, resize, and eraser button.</p>
                 </button>
-                <button class="item" id="AutoTrader">
+                <button className="item" id="AutoTrader">
                     <h2>Auto Trader</h2>
                     <p>
                         Utilized selenium to automate buying and selling of stocks for different brokerages.
                         Worked with Tradier API to buy and sell stocks on Tradier.
                     </p>
                 </button>
-                <button class="item" id="OddsTracker">
+                <button className="item" id="OddsTracker">
                     <h2>Odds Tracker</h2>
                     <p>
                         Utilized everygame.eu API and requests to retrieve game data including game name, team names, and team odds with Beautiful Soup.
@@ -71,15 +88,15 @@ function Projects(){
                     </p>
                 </button>
                 
-                <button class="item" id="Rock-Paper-Scissors">
+                <button className="item" id="Rock-Paper-Scissors">
                     <h2>Rock-Paper-Scissors</h2>
                     <p>Play rock paper scissors with a computer, first to five wins!</p>
                 </button>
-                <button class="item" id="Calculator">
+                <button className="item" id="Calculator">
                     <h2>Calculator</h2>
                     <p>Basic calculator with vanilla javascript.</p>
                 </button>
-                <button class="item" id="ComingSoon">
+                <button className="item" id="ComingSoon">
                     <h2>Coming Soon</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, illo tempora quae voluptas minima consectetur.</p>
                 </button>
@@ -93,12 +110,13 @@ function Projects(){
 
 function Contact(){
     return (
-        <div className='contact-section'>
+        <div className='contact-section' id='contact'>
         <h2>Contact Me!</h2>
         <p>Email: xchen110@gmail.com</p>
     </div>
     )
     
 }
+
 
 export default Homepage
