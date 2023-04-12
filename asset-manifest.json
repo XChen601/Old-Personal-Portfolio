@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Personal-Portfolio/static/css/main.a63ec11d.css",
+    "main.js": "/Personal-Portfolio/static/js/main.4a663f7d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Personal-Portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/etch-a-sketch.gif": "/Personal-Portfolio/static/media/etch-a-sketch.9d6ffb027bad5b75591e.gif",
+    "static/media/tickstock1.gif": "/Personal-Portfolio/static/media/tickstock1.3c983b4c854afb610e8c.gif",
+    "static/media/etch-a-sketch-button.gif": "/Personal-Portfolio/static/media/etch-a-sketch-button.b72e4f3de5c9ae1fc6c8.gif",
+    "static/media/esv1.png": "/Personal-Portfolio/static/media/esv1.7878d8dd4d2187b0d4a0.png",
+    "static/media/esv2.png": "/Personal-Portfolio/static/media/esv2.d3c2c74ded476fca47a7.png",
+    "static/media/esv4.png": "/Personal-Portfolio/static/media/esv4.59c10589a88e6391da66.png",
+    "static/media/esv3.png": "/Personal-Portfolio/static/media/esv3.81fedb4ca51a4d37fd57.png",
+    "static/media/linkedin_pfp.jpg": "/Personal-Portfolio/static/media/linkedin_pfp.e0325fcf453698d4a802.jpg",
+    "static/media/etch-a-sketch4.png": "/Personal-Portfolio/static/media/etch-a-sketch4.0b757293551b99863212.png",
+    "static/media/tickstock2.png": "/Personal-Portfolio/static/media/tickstock2.89de4331110227bf423b.png",
+    "static/media/Odd-bot.png": "/Personal-Portfolio/static/media/Odd-bot.e21225e0aeb76c0b6c92.png",
+    "static/media/odd-bot2.png": "/Personal-Portfolio/static/media/odd-bot2.b6be35ddb4fd590f405f.png",
+    "static/media/etch-a-sketch-buttons.png": "/Personal-Portfolio/static/media/etch-a-sketch-buttons.d5dac68470b2d1b43624.png",
+    "static/media/tickstock3.png": "/Personal-Portfolio/static/media/tickstock3.2af024c578cb7de681db.png",
+    "static/media/tickstock4.png": "/Personal-Portfolio/static/media/tickstock4.f6b56dd86c769a7e6524.png",
+    "static/media/odd-bot4.png": "/Personal-Portfolio/static/media/odd-bot4.6a2da56255b4009067d4.png",
+    "index.html": "/Personal-Portfolio/index.html",
+    "main.a63ec11d.css.map": "/Personal-Portfolio/static/css/main.a63ec11d.css.map",
+    "main.4a663f7d.js.map": "/Personal-Portfolio/static/js/main.4a663f7d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Personal-Portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a63ec11d.css",
+    "static/js/main.4a663f7d.js"
+  ]
+}
