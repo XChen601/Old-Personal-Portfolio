@@ -38,6 +38,7 @@ function Projects(){
     function handleClick(event) {
         if (event.target.classList.contains("item")) {
             console.log("Item clicked!");
+            navigate('/Projects')
         }
     }
 
