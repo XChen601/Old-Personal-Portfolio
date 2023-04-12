@@ -36,8 +36,31 @@ body {
     padding: 25px;
     color: #eee;
     height: max(270px, 20vh);
-
     margin: 5%;
+    position: relative;
+}
+
+.item:hover::before {
+    opacity: 1;
+}
+
+.item::before {
+    background: radial-gradient(
+        800px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, .2),
+        transparent 40%
+    );
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+    z-index: 5;
+
 }
 
 .item p {
@@ -79,15 +102,6 @@ body {
 .pfp {
     border-radius: 50%;
     border: 3px solid rgb(86, 176, 194);
-}
-
-
-/* Contact Section */
-.contact-section {
-    padding: 3% 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 

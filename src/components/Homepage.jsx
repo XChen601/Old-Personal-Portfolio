@@ -5,11 +5,35 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
 
 function Homepage(){
+    // get mouse position
+    useEffect(() => {
+        const handleMouseMove = (e) => {
+          const { currentTarget: target } = e;
+    
+          const rect = target.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
+    
+          target.style.setProperty("--mouse-x", `${x}px`);
+          target.style.setProperty("--mouse-y", `${y}px`);
+        };
+    
+        const items = document.querySelectorAll(".item");
+        items.forEach((item) => {
+          item.addEventListener("mousemove", handleMouseMove);
+        });
+    
+        return () => {
+          items.forEach((item) => {
+            item.removeEventListener("mousemove", handleMouseMove);
+          });
+        };
+      }, []);
+      
     return (
         <>
             <Introduction />
             <Projects />
-            <Contact />
         </>
     )
 }
@@ -26,7 +50,7 @@ function Introduction(){
                         I am pursuing a degree in Computer Science. I'm interested in 
                         learning more about web development, automation, and new technologies.</p>
                 </div>
-                <Button id='contact-button' variant='outlined' style={{borderColor: 'white'}}>Get In Touch</Button>
+                <Button id='contact-button' variant='outlined' style={{borderColor: 'white'}} onClick={() => document.getElementById('contact').scrollIntoView()}>Get In Touch</Button>
             </div>
         </>
     )
@@ -36,7 +60,7 @@ function Projects(){
     const navigate = useNavigate()
 
     function handleClick(event) {
-        if (event.target.classList.contains("item")) {
+        if (event.target.closest(".item")) {
             console.log("Item clicked!");
             navigate('/Projects')
         }
@@ -107,16 +131,6 @@ function Projects(){
         </>
         
     )
-}
-
-function Contact(){
-    return (
-        <div className='contact-section' id='contact'>
-        <h2>Contact Me!</h2>
-        <p>Email: xchen110@gmail.com</p>
-    </div>
-    )
-    
 }
 
 
