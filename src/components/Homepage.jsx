@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useEffect } from "react";
 
 function Homepage(){
-    // get mouse position
+    // function for mouse tracking, creating hover effect on cards in projects section
     useEffect(() => {
         const handleMouseMove = (e) => {
           const { currentTarget: target } = e;
@@ -66,6 +66,7 @@ function Projects(){
         }
     }
 
+    // using useEffect so when switching back to router page, the event listener is still there
     useEffect(() => {
         window.addEventListener("click", handleClick);
         return () => {

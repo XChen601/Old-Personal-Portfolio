@@ -9,6 +9,7 @@
 
 .project-name {
     font-size: max(2vw, 30px);
+    font-weight: 600;
 }
 
 .project-description {

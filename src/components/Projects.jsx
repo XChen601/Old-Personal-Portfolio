@@ -45,7 +45,7 @@ function Projects() {
             </div>
             <div className="project-item">
                 <div className="project-name">Etch-A-Sketch</div>
-                <div className="project-description">Website with Etch-A-Sketch created using HTML, CSS, and JS. Features include rainbow, clear, resize, and eraser button.</div>
+                <div className="project-description">Website with Etch-A-Sketch created using HTML, CSS, and JS. Dynamically updates page depending on the selected inputs. Features include rainbow, clear, resize, and eraser button.</div>
                 <div className="project-images">
                     <div><img src={eas1} alt="demo-img"/></div>
                     <div><img src={eas2} alt="demo-img"/></div>
