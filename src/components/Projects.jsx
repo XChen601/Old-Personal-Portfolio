@@ -16,6 +16,9 @@ import esv1 from '../images/esv1.png'
 import esv2 from '../images/esv2.png'
 import esv3 from '../images/esv3.png'
 import esv4 from '../images/esv4.png'
+import fortnite1 from '../images/fortnite1.png'
+import fortnite2 from '../images/fortnite2.png'
+import fortnite3 from '../images/fortnite3.png'
 
 
 function Projects() {
@@ -30,6 +33,15 @@ function Projects() {
                     <div><img src={esv2} alt="demo-img"/></div>
                     <div><img src={esv3} alt="demo-img"/></div>
                     <div><img src={esv4} alt="demo-img"/></div>
+                </div>
+            </div>
+            <div className="project-item">
+                <div className="project-name">Tourist Destination React Project</div>
+                <div className="project-description">Utilized React and React Router to create a multi-page, responsive web application</div>
+                <div className="project-images">
+                    <div><img src={fortnite1} alt="demo-img"/></div>
+                    <div><img src={fortnite2} alt="demo-img"/></div>
+                    <div><img src={fortnite3} alt="demo-img"/></div>
                 </div>
             </div>
             <div className="project-item">
