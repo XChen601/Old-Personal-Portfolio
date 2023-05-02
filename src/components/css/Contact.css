@@ -14,11 +14,6 @@
     width: 100%;
 }
 
-.contact-section form input, textarea {
-    width: 40%;
-    height: 30px;
-}
-
 textarea {
     height: 100px;
 }
@@ -37,4 +32,50 @@ textarea {
     color: black;
     border: 2px black solid;
     cursor: pointer;
+}
+
+input {
+    width: 40%;
+    height: 30px;
+    border: 2px solid white;
+    margin: 0;
+  
+    font-family: inherit;
+    font-size: 90%;
+    box-sizing:border-box;
+    appearance: none;
+}
+input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+}
+
+.error.active {
+padding: 0.3em;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+label input {
+    width: 100%;
+}
+
+textarea {
+    width: 40%;
 }
