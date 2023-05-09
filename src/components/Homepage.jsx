@@ -33,6 +33,7 @@ function Homepage(){
     return (
         <>
             <Introduction />
+            <Experiences/>
             <Projects />
         </>
     )
@@ -55,6 +56,58 @@ function Introduction(){
         </>
     )
 }
+
+function Experiences(){
+    return (
+        <>
+        <div className="experiences" id="experience-list">
+            <h2>Experiences</h2>
+            <div className='experience-item'>
+                <h2 className='experience-title'>IT Intern</h2>
+                <div className='sub-title'>
+                    <h4>DEPARTMENT OF YOUTH AND COMMUNITY DEVELOPMENT</h4>
+                    <h4>July 2022 - September 2022</h4>
+                </div>
+                <p className='experience-description'>Completed and deployed a SQL Server Reporting Services (SSRS) report data to be used by the agency to retrieve relevant data <br/>
+                Used SQL Server Management Studio to retrieve data across multiple years from an internal database to incorporate into an SSRS report<br/>
+                Worked with excel spreadsheets to organize data and to update internal databases with improved descriptions for over 100 reports for better readability.<br/>
+                Participated in daily stand-ups and collaborated with team members to achieve sprint goals.
+                </p>
+            </div>
+            <div className='experience-item'>
+                <h2 className='experience-title'>Android Developer</h2>
+                <div className='sub-title'>
+                    <h4>CODEPATH: ANDROID DEVELOPMENT</h4>
+                    <h4>February 2022 - April 2022</h4>
+                </div>
+                <p className='experience-description'>Learned the basics of Android Studios and Kotlin. <br/>
+                Utilized Back4App to create a backend that stores usernames and user passwords. <br/>
+                Worked with team members to create an Android application which retrieves data from Polygon API resulting in a functioning stock information app with Kotlin
+                </p>
+            </div>
+            <div className='experience-item'>
+                <h2 className='experience-title'>Cybersecurity</h2>
+                <div className='sub-title'>
+                    <h4>CODEPATH: CYBERSECURITY</h4>
+                    <h4>September 2022 - November 2022</h4>
+                </div>
+                <p className='experience-description'>Worked with team members to create an Android application which retrieves data from Polygon API resulting in a functioning stock information app with Kotlin
+                </p>
+            </div>
+            <div className='experience-item'>
+                <h2 className='experience-title'>Camp Counselor</h2>
+                <div className='sub-title'>
+                    <h4>HARRIMAN SUMMER CAMP</h4>
+                    <h4>July 2021 - September 2021</h4>
+                </div>
+                <p className='experience-description'>Guided students in indoor activities such as arts and craft. <br/>
+                Monitored students to make sure they were on task and following school rules.Demonstrated and organized physical activities for students to perform.<br/>
+                Encouraged students to participate in activities.
+                </p>
+            </div>
+        </div>
+        </>
+)}
 
 function Projects(){
     const navigate = useNavigate()

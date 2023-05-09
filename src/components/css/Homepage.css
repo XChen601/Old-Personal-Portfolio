@@ -104,4 +104,23 @@ body {
     border: 3px solid rgb(86, 176, 194);
 }
 
+/* experiences */
+.experiences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 10%;
+}
+.experience-item {
+    width: 100%;
+}
+.experience-title {
+    color: rgb(86, 176, 194);
+}
+.sub-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
